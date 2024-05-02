@@ -26,7 +26,7 @@ body {
 .grid_container {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
-  grid-template-rows: 80px repeat(2, 1fr) 0.5fr;
+  grid-template-rows: 80px 80px repeat(3, 1fr);
   grid-column-gap: 16px;
 
   width: 100%;
@@ -170,28 +170,101 @@ body {
 
 .navbar li:hover::after {
   width: 100%;
+
 }
 
 /* KPI's */
 .container_temperatura {
-  grid-area: 2 / 2 / 3 / 3;
+  grid-area: 3 / 2 / 4 / 3;
 }
 
 .container_umidade {
-  grid-area: 2 / 3 / 3 / 4;
+  grid-area: 3 / 3 / 4 / 4;
 }
 
 .container_proximidade {
-  grid-area: 2 / 4 / 3 / 5;
+  grid-area: 3 / 4 / 4 / 5;
 }
 
 .container_alerta {
-  grid-area: 2 / 5 / 3 / 6;
+  grid-area: 3 / 5 / 4 / 6;
   margin-right: 10px;
 }
 
-.container_alerta > p,
-.container_proximidade > p {
+.container_metricas {
+  grid-area: 2/2/3/6;
+  margin-right: 10px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  
+}
+
+
+
+#alerta_temperatura_baixa {
+  background-color: #8ecde7;
+  width: 15%;
+  height: 60%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 4px 0 0 4px;
+}
+
+#alerta_temperatura_ideal {
+  background-color: greenyellow;
+  width: 15%;
+  height: 60%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#alerta_temperatura_alta {
+  background-color: rgb(252, 103, 39);
+  width: 15%;
+  height: 60%;
+  margin-right: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0 4px 4px 0;
+}
+
+#alerta_umidade_baixa{
+  background-color: rgb(179, 175, 175);
+  width: 15%;
+  height: 60%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 4px 0 0 4px;
+}
+
+#alerta_umidade_ideal {
+background-color: var(--azul-escuro);
+width: 15%;
+height: 60%;
+display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#alerta_umidade_alta{
+  background-color: #001d6c;
+  width: 15%;
+  height: 60%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0 4px 4px 0;
+}
+
+.container_alerta>p,
+.container_proximidade>p {
   font-size: 25px;
 }
 
@@ -218,10 +291,11 @@ body {
 /* Graficos de temperatura e umidade */
 
 .container_grafico-temperatura {
-  grid-area: 3 / 2 / 5 / 4;
+  grid-area: 4 / 2 / 6 / 4;
 }
+
 .container_grafico-umidade {
-  grid-area: 3 / 4 / 5 / 6;
+  grid-area: 4 / 4 / 6 / 6;
   margin-right: 10px;
 }
 
