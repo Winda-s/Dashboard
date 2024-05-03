@@ -205,7 +205,7 @@ body {
 
 
 #alerta_temperatura_baixa {
-  background-color: #8ecde7;
+  background-color: #42A5F5;
   width: 15%;
   height: 60%;
   display: flex;
@@ -215,7 +215,7 @@ body {
 }
 
 #alerta_temperatura_ideal {
-  background-color: greenyellow;
+  background-color: #9CCC65;
   width: 15%;
   height: 60%;
   display: flex;
@@ -224,7 +224,7 @@ body {
 }
 
 #alerta_temperatura_alta {
-  background-color: rgb(252, 103, 39);
+  background-color: #FF7043;
   width: 15%;
   height: 60%;
   margin-right: 40px;
@@ -235,7 +235,7 @@ body {
 }
 
 #alerta_umidade_baixa{
-  background-color: rgb(179, 175, 175);
+  background-color: #A1B9CC;
   width: 15%;
   height: 60%;
   display: flex;
@@ -245,7 +245,7 @@ body {
 }
 
 #alerta_umidade_ideal {
-background-color: var(--azul-escuro);
+background-color: #9CCC65;
 width: 15%;
 height: 60%;
 display: flex;
@@ -254,7 +254,7 @@ display: flex;
 }
 
 #alerta_umidade_alta{
-  background-color: #001d6c;
+  background-color: #0062FF;
   width: 15%;
   height: 60%;
   display: flex;
